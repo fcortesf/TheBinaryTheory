@@ -1,0 +1,23 @@
+{
+  "name": "chapter-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "test-watch":"ava --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.15.0"
+  },
+  "ava": {
+    "files": ["test/**/*"],
+		"verbose": true,
+		"nodeArguments": [
+			"--trace-deprecation",
+			"--napi-modules"
+		]
+	}
+}
